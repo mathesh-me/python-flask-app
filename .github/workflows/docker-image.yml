@@ -9,7 +9,6 @@ on:
 jobs:
 
   image-push:
-    needs: build-and-test-python-app
     runs-on: ubuntu-latest
 
     steps:
