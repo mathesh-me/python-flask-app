@@ -4,11 +4,11 @@ This repository contains the source code for the **End-to-End Continuous Integra
 
 ## Architecture Overview
 
-We are going to build a CI/CD pipeline that will be triggered by a push to the main branch of the repository. The pipeline will build the application, run the tests, and deploy the application to a Kubernetes cluster. The pipeline will be implemented using GitHub Actions and ArgoCD.
+We are going to build a CI/CD pipeline that will be triggered by a push to the main branch of the repository. **The pipeline will build the application, run the tests, and deploy the application to a Kubernetes cluster**. The pipeline will be implemented using GitHub Actions and ArgoCD.
 
 **The architecture of the project is explained below:**
 
-First, we have a GitHub repository that contains the source code of the application. The repository is connected to GitHub Actions, which will be used to build and deploy the application. The GitHub Actions workflow will be triggered by a push to the main branch of the repository. The workflow will build the application, run the tests, and Push the Docker image to Docker Hub. And then It will **Update the Image tag in the Manifest Repository**. The Manifest Repository is a separate GitHub repository that contains the Kubernetes manifests for the application. And our Argo CD will be watching this repository for changes. **Once the image tag is updated in the Manifest Repository, Argo CD will automatically deploy the new version of the application to the Kubernetes cluster**.
+First, we have a **GitHub repository that contains the source code of the application**. The repository is connected to GitHub Actions, which will be used to build and deploy the application. The GitHub Actions workflow will be triggered by a push to the main branch of the repository. **The workflow will build the application, run the tests, and Push the Docker image to Docker Hub. And then It will Update the Image tag in the Manifest Repository**. The Manifest Repository is a separate GitHub repository that contains the Kubernetes manifests for the application. And our Argo CD will be watching this repository for changes. **Once the image tag is updated in the Manifest Repository, Argo CD will automatically deploy the new version of the application to the Kubernetes cluster**.
 
 ## Architecture Diagram
 
