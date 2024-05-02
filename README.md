@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # End-to-End Continuous Integration and Continuous Deployment based on GitOps
 
 This repository contains the source code for the End-to-End Continuous Integration and Continuous Deployment based on GitOps project.
@@ -45,3 +46,7 @@ Contributions are welcome! If you have any suggestions or run into any issues, f
 
 - [Mathesh M](https://www.linkedin.com/in/mathesh-me/) on LinkedIn.
 - You Can also check out my [Medium](https://medium.com/@mathesh-me) for articles on DevOps Tools and Technologies.️
+=======
+# python-flask-application
+A Simple Python Flask Application
+>>>>>>> 9fc652bfc6d4cbc0a9d388b28e624e4012dab81c
