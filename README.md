@@ -32,7 +32,7 @@ First, we have a **GitHub repository that contains the source code of the applic
 3. Update your Argo CD application to watch the Manifest Repository.
 4. Push a change to the main branch of the repository to trigger the CI/CD pipeline.
 
-You can Check out my [Medium Article]() for detailed instructions on how to set up the CI/CD pipeline and deploy the application to a Kubernetes cluster based on GitOps.
+You can Check out my [Medium Article]() for detailed instructions on **How to set up the CI/CD pipeline and deploy the application to a Kubernetes cluster based on GitOps**.
 
 ## License
 
