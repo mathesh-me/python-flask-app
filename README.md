@@ -1,8 +1,8 @@
-# End-to-End Continuous Integration and Continuous Deployment based on GitOps
+# End-to-End Continuous Integration and Continuous Deployment based on GitOps using GitHub Actions and Argo CD 🚀
 
 This repository contains the source code for the **End-to-End Continuous Integration and Continuous Deployment based on GitOps** project.
 
-## Architecture Overview
+## Architecture Overview 📚
 
 We are going to build a CI/CD pipeline that will be triggered by a push to the main branch of the repository. **The pipeline will build the application, run the tests, and deploy the application to a Kubernetes cluster**. The pipeline will be implemented using GitHub Actions and ArgoCD.
 
@@ -10,19 +10,19 @@ We are going to build a CI/CD pipeline that will be triggered by a push to the m
 
 First, we have a **GitHub repository that contains the source code of the application**. The repository is connected to GitHub Actions, which will be used to build and deploy the application. The GitHub Actions workflow will be triggered by a push to the main branch of the repository. **The workflow will build the application, run the tests, and Push the Docker image to Docker Hub. And then It will Update the Image tag in the Manifest Repository**. The Manifest Repository is a separate GitHub repository that contains the Kubernetes manifests for the application. And our Argo CD will be watching this repository for changes. **Once the image tag is updated in the Manifest Repository, Argo CD will automatically deploy the new version of the application to the Kubernetes cluster**.
 
-## Architecture Diagram
+## Architecture Diagram 📊
 
 ![Argo CD Pipeline](https://github.com/mathesh-me/python-flask-app/assets/144098846/ea1757e8-0c61-47e9-9018-8530cfb3e879)
 
 
-## Prerequisites
+## Prerequisites 📋
 
-- A GitHub account
-- A Docker Hub account
-- A Kubernetes cluster
-- Argo CD installed on the Kubernetes cluster
+- `A GitHub account`
+- `A Docker Hub account`
+- `A Kubernetes cluster`
+- `Argo CD installed on the Kubernetes cluster`
 
-## Usage
+## Usage 🛠️
 
 1. Fork this repository and Manifest Repository to your GitHub account.
 2. Add the following secrets to your GitHub repository:
@@ -34,15 +34,15 @@ First, we have a **GitHub repository that contains the source code of the applic
 
 You can Check out my [Medium Article]() for detailed instructions on **How to set up the CI/CD pipeline and deploy the application to a Kubernetes cluster based on GitOps**.
 
-## License
+## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contributing
+## Contributing 🤝
 
 Contributions are welcome! If you have any suggestions or run into any issues, feel free to open an issue or create a pull request.
 
-## Author
+## Author 🙋‍♂
 
 - [Mathesh M](https://www.linkedin.com/in/mathesh-me/) on LinkedIn.
 - You Can also check out my [Medium](https://medium.com/@mathesh-me) for articles on DevOps Tools and Technologies.️
