@@ -1,6 +1,6 @@
 # End-to-End Continuous Integration and Continuous Deployment based on GitOps
 
-This repository contains the source code for the End-to-End Continuous Integration and Continuous Deployment based on GitOps project.
+This repository contains the source code for the **End-to-End Continuous Integration and Continuous Deployment based on GitOps** project.
 
 ## Architecture Overview
 
